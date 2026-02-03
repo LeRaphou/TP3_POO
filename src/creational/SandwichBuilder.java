@@ -3,27 +3,45 @@ package creational;
 public class SandwichBuilder {
 
     String bread;
-    boolean cheese;
-    boolean tomato;
-    boolean salad;
+    String cheese;
+    String tomato;
+    String salad;
+    String sauce;
+    String grill;
+    String meat;
 
     public SandwichBuilder withBread(String bread) {
         this.bread = bread;
         return this;
     }
 
-    public SandwichBuilder withCheese(boolean cheese) {
+    public SandwichBuilder withCheese(String cheese) {
         this.cheese = cheese;
         return this;
     }
 
-    public SandwichBuilder withTomato(boolean tomato) {
+    public SandwichBuilder withTomato(String tomato) {
         this.tomato = tomato;
         return this;
     }
 
-    public SandwichBuilder withSalad(boolean salad) {
+    public SandwichBuilder withSalad(String salad) {
         this.salad = salad;
+        return this;
+    }
+
+    public SandwichBuilder withSauce(String sauce){
+        this.sauce = sauce;
+        return this;
+    }
+
+    public SandwichBuilder withGrill(String grill){
+        this.grill = grill;
+        return this;
+    }
+
+    public SandwichBuilder withMeat(String meat){
+        this.meat = meat;
         return this;
     }
 

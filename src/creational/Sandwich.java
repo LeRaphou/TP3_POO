@@ -2,21 +2,30 @@ package creational;
 
 public class Sandwich {
     private final String bread;
-    private final boolean cheese;
-    private final boolean tomato;
-    private final boolean salad;
+    private final String cheese;
+    private final String tomato;
+    private final String salad;
+    private final String sauce;
+    private final String grill;
+    private final String meat;
 
     public Sandwich(SandwichBuilder builder){
         this.bread = builder.bread;
         this.cheese = builder.cheese;
         this.tomato = builder.tomato;
         this.salad = builder.salad;
+        this.sauce = builder.sauce;
+        this.grill = builder.grill;
+        this.meat = builder.meat;
 
     }
 
     public String getBread() { return bread; }
-    public boolean hasCheese() { return cheese; }
-    public boolean hasTomato() { return tomato; }
-    public boolean hasSalad() { return salad; }
+    public String getCheese() { return cheese; }
+    public String getTomato() { return tomato; }
+    public String getSalad() { return salad; }
+    public String getSauce(){return sauce;}
+    public String getGrill(){return grill;}
+    public String getMeat(){return meat;}
 
 }
